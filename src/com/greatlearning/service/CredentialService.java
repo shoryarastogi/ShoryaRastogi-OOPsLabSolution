@@ -22,13 +22,13 @@ public class CredentialService {
     }
 
     public String generateEmailAddress(String firstName, String lastName, String department) {
-        return firstName + lastName + "@" + department + "abc.com";
+        return firstName + lastName + "@" + department + ".abc.com";
     }
 
     public void showCredentials(Employee employee, String email, char[] password) {
-        System.out.println("Dear " + employee.getFirstName() + " your generated credentials are as follows :");
-        System.out.println("Email --> " + email);
+        System.out.println("Dear " + employee.getFirstName() + " your generated credentials are as follows");
+        System.out.println("Email ---> " + email);
         String m_password = new String(password);
-        System.out.println("Password -->" + m_password);
+        System.out.println("Password --->" + m_password);
     }
 }
